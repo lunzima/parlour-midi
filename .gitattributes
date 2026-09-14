@@ -1,0 +1,7 @@
+# The .mid ARE the deliverable. A line-ending conversion would not fail
+# loudly - it would rewrite 0x0D 0x0A inside a delta time and hand back a
+# file that still opens. Pinned, not left to git's binary heuristic.
+*.mid binary
+
+*.py  text eol=lf
+*.md  text eol=lf
